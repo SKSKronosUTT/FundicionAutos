@@ -33,14 +33,15 @@ public class ListaEnlazada
 
     public void Enlistar(int y){
         if(primero == null) {
-            Program.PrintXY(5,y, "Lista vacia!");
+            Program.Error(10,y + 1, "Lista vacia!");
             return;
         }
         Nodo actual = primero;
-        Program.Subtitulo(5,y,"Código");
+        
+        Program.Subtitulo(8,y,"Código");
         Program.Subtitulo(25,y,"Descripcion");
         y++;
-        Program.PrintXY(5,y,"------");
+        Program.PrintXY(8,y,"------");
         Program.PrintXY(25,y,"-----------");
         y++;
         int contador = 0;
