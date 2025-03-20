@@ -32,6 +32,8 @@ class Program
 
     static void Main(string[] args)
     {
+        Console.Title = "Fundición de autos";
+        
         //Carga de autos compactos
         compactos.AgregarAlFinal("SUIM","Subaru Impreza");
         compactos.AgregarAlFinal("TOSU","Toyota Supra");
