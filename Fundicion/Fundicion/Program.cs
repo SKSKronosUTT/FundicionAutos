@@ -144,7 +144,7 @@ class Program
         {
             Console.Clear();
             Titulo(10,1,"Fundir Auto");
-            
+            //Pila que tienen otras pilas 
             PilaEnlazada[] pilas = [compactos, camionetas, vagonetas, camiones, autobuses];
             PilaEnlazada[] pilasFundidas = [compactosFundidos, camionetasFundidas, vagonetasFundidas, camionesFundidos, autobusesFundidos];	
 
