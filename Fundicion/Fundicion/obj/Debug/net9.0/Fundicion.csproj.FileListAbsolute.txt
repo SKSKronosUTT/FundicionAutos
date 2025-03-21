@@ -12,3 +12,18 @@ C:\Users\SKS\Documents\UTT\4to cuatrimestre\Estructura de datos\Fundicion\Fundic
 C:\Users\SKS\Documents\UTT\4to cuatrimestre\Estructura de datos\Fundicion\Fundicion\obj\Debug\net9.0\Fundicion.pdb
 C:\Users\SKS\Documents\UTT\4to cuatrimestre\Estructura de datos\Fundicion\Fundicion\obj\Debug\net9.0\Fundicion.genruntimeconfig.cache
 C:\Users\SKS\Documents\UTT\4to cuatrimestre\Estructura de datos\Fundicion\Fundicion\obj\Debug\net9.0\ref\Fundicion.dll
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\bin\Debug\net9.0\Fundicion.exe
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\bin\Debug\net9.0\Fundicion.deps.json
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\bin\Debug\net9.0\Fundicion.runtimeconfig.json
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\bin\Debug\net9.0\Fundicion.dll
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\bin\Debug\net9.0\Fundicion.pdb
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\obj\Debug\net9.0\Fundicion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\obj\Debug\net9.0\Fundicion.AssemblyInfoInputs.cache
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\obj\Debug\net9.0\Fundicion.AssemblyInfo.cs
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\obj\Debug\net9.0\Fundicion.csproj.CoreCompileInputs.cache
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\obj\Debug\net9.0\Fundicion.sourcelink.json
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\obj\Debug\net9.0\Fundicion.dll
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\obj\Debug\net9.0\refint\Fundicion.dll
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\obj\Debug\net9.0\Fundicion.pdb
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\obj\Debug\net9.0\Fundicion.genruntimeconfig.cache
+C:\Users\Jabes\OneDrive\Escritorio\FundicionAutos\fundicion\fundicion\obj\Debug\net9.0\ref\Fundicion.dll
