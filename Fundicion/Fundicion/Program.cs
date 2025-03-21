@@ -208,7 +208,7 @@ class Program
         Titulo(10,1,"Autos totales");
 
         int i = 0;
-        int contador = 0;
+        int acumulador = 0;
         PrintXY(5,2);
 
         foreach (PilaEnlazada pila in pilas)
@@ -216,10 +216,10 @@ class Program
             Subtitulo(5, Top(1), $"{clasificaciones[i]}: ");
             PrintXY(20, Top(), pila.ContarElementos().ToString());
             i++;
-            contador += pila.ContarElementos();
+            acumulador += pila.ContarElementos();
         }
         Correcto(5, Top(2), "Total de autos ingresados: ");
-        PrintXY(35, Top(), contador.ToString());
+        PrintXY(35, Top(), acumulador.ToString());
         
         Continuar(5,Top(3));
     }
@@ -397,8 +397,6 @@ class Program
         PrintXY(x, y, Espacios(num.ToString().Length));
     }
 }
-
-
 
 
 
