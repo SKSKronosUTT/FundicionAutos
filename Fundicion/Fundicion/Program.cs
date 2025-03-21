@@ -3,17 +3,22 @@
 class Program
 {
     //Pilas de autos almacenados y fundidos
-    public static PilaEnlazada compactos = new PilaEnlazada();
-    public static PilaEnlazada compactosFundidos = new PilaEnlazada();
-    public static PilaEnlazada camionetas = new PilaEnlazada();
-    public static PilaEnlazada camionetasFundidas = new PilaEnlazada();
-    public static PilaEnlazada vagonetas = new PilaEnlazada();
-    public static PilaEnlazada vagonetasFundidas = new PilaEnlazada();
-    public static PilaEnlazada camiones = new PilaEnlazada();
-    public static PilaEnlazada camionesFundidos = new PilaEnlazada();
-    public static PilaEnlazada autobuses = new PilaEnlazada();
-    public static PilaEnlazada autobusesFundidos = new PilaEnlazada();
-    
+    //arreglo de pilas / pilas de pilas
+    static PilaEnlazada[] pilas = [
+        new PilaEnlazada(), //compactos
+        new PilaEnlazada(), //camionetas
+        new PilaEnlazada(), //vagonetas
+        new PilaEnlazada(), //camiones
+        new PilaEnlazada()  //autobuses
+    ];
+    static PilaEnlazada[] pilasFundidas = [
+        new PilaEnlazada(), //compactos
+        new PilaEnlazada(), //camionetas
+        new PilaEnlazada(), //vagonetas
+        new PilaEnlazada(), //camiones
+        new PilaEnlazada()  //autobuses
+    ];
+
     //Clasificaciones de autos en plural y singular
     public static string[] clasificaciones = [
             "Compactos", 
@@ -33,6 +38,11 @@ class Program
     static void Main(string[] args)
     {
         Console.Title = "Fundición de autos";
+        PilaEnlazada compactos = pilas[0];
+        PilaEnlazada camionetas = pilas[1];
+        PilaEnlazada vagonetas = pilas[2];
+        PilaEnlazada camiones = pilas[3];
+        PilaEnlazada autobuses = pilas[4];
         
         //Carga de autos compactos
         compactos.AgregarAlFinal("SUIM","Subaru Impreza");
@@ -100,7 +110,6 @@ class Program
         bool respuesta;
         do
         {
-            PilaEnlazada[] pilas = [compactos, camionetas, vagonetas, camiones, autobuses];
             Console.Clear();
             Titulo(10,1, "Ingresar Auto");
 
@@ -144,9 +153,6 @@ class Program
         {
             Console.Clear();
             Titulo(10,1,"Fundir Auto");
-            //Pila que tienen otras pilas 
-            PilaEnlazada[] pilas = [compactos, camionetas, vagonetas, camiones, autobuses];
-            PilaEnlazada[] pilasFundidas = [compactosFundidos, camionetasFundidas, vagonetasFundidas, camionesFundidos, autobusesFundidos];	
 
             Instruccion(5,3, "Selecciona una categoría de autos para fundir:");
             Lista(clasificaciones);
@@ -184,7 +190,6 @@ class Program
         do
         {
             Console.Clear();
-            PilaEnlazada[] pilas = [compactos, camionetas, vagonetas, camiones, autobuses];
             Titulo(10,1,"Autos por clasificación");
             Instruccion(5,3, "Selecciona una categoría de autos para visualizar:");
             Lista(clasificaciones);
@@ -203,7 +208,6 @@ class Program
     public static void AutosTotales()
     {
         Console.Clear();
-        PilaEnlazada[] pilas = [compactos, camionetas, vagonetas, camiones, autobuses];
         
         Titulo(10,1,"Autos totales");
 
@@ -230,7 +234,6 @@ class Program
         do
         {
             Console.Clear();
-            PilaEnlazada[] pilasFundidas = [compactosFundidos, camionetasFundidas, vagonetasFundidas, camionesFundidos, autobusesFundidos];
 
             Titulo(10,1,"Autos fundidos");
             Instruccion(5,3, "Selecciona una categoría de autos para visualizar:");
@@ -397,33 +400,3 @@ class Program
         PrintXY(x, y, Espacios(num.ToString().Length));
     }
 }
-
-
-
-
-//Método para fundir auto deprecado
-    // int opc;
-    // Nodo eliminado;
-    // do{
-    //     PrintXY(7, y);
-    //     opc = LeerNumero(1,5) - 1; 
-    //     BorrarLectura("                                        ", 5, 10);
-        
-    //     if(pilas[opc].ContarElementos() != 0)
-    //         break;
-    //     Error(5, y - 3, $"No hay autos en la categoría {clasificaciones[opc]}");
-    //     BorrarLectura(" ", 7, y);
-    // } while(true);
-    // BorrarLectura("                                        ", 5, 10);
-    // eliminado = pilas[opc].Peek();
-    
-    // PrintXY(5, Console.CursorTop + 3, $"Se fundirá {clasificacionesSingular[opc]} \"{eliminado.Valor2}\" con código \"{eliminado.Valor1}\" en la posición {pilas[opc].ContarElementos()}");
-    // respuesta = Pregunta("¿Está seguro?", 5, Console.CursorTop - 1);
-    // if(respuesta)
-    // {
-    //     pilas[opc].Pop();
-    //     Correcto(5, Console.CursorTop, $"Se fundió el auto \"{eliminado.Valor2}\"");
-    //     pilasFundidas[opc].Push(eliminado.Valor1, eliminado.Valor2);
-    // }
-    // else
-    //     Correcto(5, Console.CursorTop, $"No se fundió el auto \"{eliminado.Valor2}\"");
