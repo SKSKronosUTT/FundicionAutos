@@ -1,4 +1,11 @@
-﻿using System;
+﻿// Cuevas Zapata Juan Andres
+// Llamas Zamudio Jabes
+// Toledo Herrera Neyzer Joel
+// 20/03/2025
+// 4C
+// 1.Fundicion de carros
+
+using System;
 
 class Program
 {
@@ -45,31 +52,34 @@ class Program
         PilaEnlazada autobuses = pilas[4];
         
         //Carga de autos compactos
-        compactos.AgregarAlFinal("SUIM","Subaru Impreza");
-        compactos.AgregarAlFinal("TOSU","Toyota Supra");
-        compactos.AgregarAlFinal("HOCI","Honda Civic");
-        compactos.AgregarAlFinal("MAMX5","Mazda MX-5");
-        compactos.AgregarAlFinal("HOACC","Honda Accord");
+        compactos.Push("SUIM","Subaru Impreza");
+        compactos.Push("TOSU","Toyota Supra");
+        compactos.Push("HOCI","Honda Civic");
+        compactos.Push("MAMX5","Mazda MX-5");
+        compactos.Push("HOACC","Honda Accord");
+        compactos.Push("TOCOR","Toyota Corolla");
+        compactos.Push("TOYAR","Toyota Aristo");
+        compactos.Push("HOCRZ","Honda CR-Z");
+        compactos.Push("MAMX3","Mazda MX-3");
+        compactos.Push("HOCRX","Honda CR-X");
 
         //Carga de camionetas
-        camionetas.AgregarAlFinal("MACX9","Mazda CX-9");
-        camionetas.AgregarAlFinal("HOCRV","Honda CR-V");
-        camionetas.AgregarAlFinal("VWTIG","Volkswagen Tiguan");
+        camionetas.Push("VWTIG","Volkswagen Tiguan");
         
         //Carga de vagonetas
-        vagonetas.AgregarAlFinal("MIXPA","Mitsubishi Xpander");  
-        vagonetas.AgregarAlFinal("TOYSI","Toyota Sienna");
-        vagonetas.AgregarAlFinal("CRYPA","Chrysler Pacifica");
+        vagonetas.Push("MIXPA","Mitsubishi Xpander");  
+        vagonetas.Push("TOYSI","Toyota Sienna");
+        vagonetas.Push("CRYPA","Chrysler Pacifica");
 
         //Carga de camiones
-        camiones.AgregarAlFinal("VOLGA","Volvo Gama FH");
-        camiones.AgregarAlFinal("MERAC","Mercedes Actros");
-        camiones.AgregarAlFinal("RETUCK","Renault Truck Gama");
+        camiones.Push("VOLGA","Volvo Gama FH");
+        camiones.Push("MERAC","Mercedes Actros");
+        camiones.Push("RETUCK","Renault Truck Gama");
         
         //Carga de autobuses
-        autobuses.AgregarAlFinal("MERMB","Mercedes-Benz MBO 1421 ");  
-        autobuses.AgregarAlFinal("VOLB","Volvo B13R");
-        autobuses.AgregarAlFinal("MANLI","Man Lions Coach");
+        autobuses.Push("MERMB","Mercedes-Benz MBO 1421 ");  
+        autobuses.Push("VOLB","Volvo B13R");
+        autobuses.Push("MANLI","Man Lions Coach");
 
         int opc;
         do
