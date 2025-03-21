@@ -54,40 +54,6 @@ public class ListaEnlazada
         }
     }
 
-    // Método para eliminar por valor
-    public void EliminarPorValor(object valor)
-    {
-        if (primero == null)
-        {
-            Console.WriteLine("Lista vacía. No se puede eliminar ningún elemento.");
-            return;
-        }
-        
-        if (primero.Valor1.ToString().Equals(valor.ToString()))
-        {
-            primero = primero.Siguiente;
-            contador--;
-            Console.WriteLine($"El Auto '{valor}' ha sido eliminado correctamente.");
-            return;
-        }
-
-        Nodo actual = primero;
-        while (actual.Siguiente != null && !actual.Siguiente.Valor1.ToString().Equals(valor.ToString()))
-        {
-            actual = actual.Siguiente;
-        }
-
-        if (actual.Siguiente != null)
-        {
-            actual.Siguiente = actual.Siguiente.Siguiente;
-            contador--;
-            Console.WriteLine($"El Auto '{valor}' ha sido eliminado correctamente.");
-        }
-        else
-        {
-            Console.WriteLine($"No se encontró ningún Auto con el nombre '{valor}'.");
-        }
-    }
 
     public void EliminarIndice(int indice){
         if (indice >= 0 && indice < contador)
@@ -116,28 +82,6 @@ public class ListaEnlazada
         }
     }
 
-    // Método para buscar por valor
-    public Nodo BuscarPorValor(object valor)
-    {
-        if (primero == null)
-        {
-            return null;
-        }
-        
-        Nodo actual = primero;
-        
-        while (actual != null)
-        {
-            if (actual.Valor1.ToString().Equals(valor.ToString()))
-            {
-                return actual;
-            }
-            actual = actual.Siguiente;
-        }
-        
-        return null;
-    }
-
     public Nodo BuscarIndice(int indice){
         if (indice == 0)
             return primero;
@@ -147,13 +91,6 @@ public class ListaEnlazada
         for (int i = 0; i < indice; i++)
             actual = actual.Siguiente;
         return actual;
-    }
-    
-    // Método para eliminar toda la lista
-    public void EliminarLista()
-    {
-        primero = null;
-        contador = 0;
     }
 
     // Método para contar elementos

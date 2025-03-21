@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SKS\\Documents\\UTT\\4to cuatrimestre\\Estructura de datos\\Fundicion\\Fundicion\\Fundicion.csproj": {}
+    "C:\\Users\\Jabes\\OneDrive\\Escritorio\\FundicionAutos\\Fundicion\\Fundicion\\Fundicion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SKS\\Documents\\UTT\\4to cuatrimestre\\Estructura de datos\\Fundicion\\Fundicion\\Fundicion.csproj": {
+    "C:\\Users\\Jabes\\OneDrive\\Escritorio\\FundicionAutos\\Fundicion\\Fundicion\\Fundicion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SKS\\Documents\\UTT\\4to cuatrimestre\\Estructura de datos\\Fundicion\\Fundicion\\Fundicion.csproj",
+        "projectUniqueName": "C:\\Users\\Jabes\\OneDrive\\Escritorio\\FundicionAutos\\Fundicion\\Fundicion\\Fundicion.csproj",
         "projectName": "Fundicion",
-        "projectPath": "C:\\Users\\SKS\\Documents\\UTT\\4to cuatrimestre\\Estructura de datos\\Fundicion\\Fundicion\\Fundicion.csproj",
-        "packagesPath": "C:\\Users\\SKS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SKS\\Documents\\UTT\\4to cuatrimestre\\Estructura de datos\\Fundicion\\Fundicion\\obj\\",
+        "projectPath": "C:\\Users\\Jabes\\OneDrive\\Escritorio\\FundicionAutos\\Fundicion\\Fundicion\\Fundicion.csproj",
+        "packagesPath": "C:\\Users\\Jabes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jabes\\OneDrive\\Escritorio\\FundicionAutos\\Fundicion\\Fundicion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SKS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Jabes\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
